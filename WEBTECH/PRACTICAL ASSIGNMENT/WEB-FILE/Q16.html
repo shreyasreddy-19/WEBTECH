@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.hide {
+  display: none;
+}
+</style>
+</head>
+
+<body>
+
+<p id="para">This text can be hidden</p>
+<button onclick="toggleText()">Show / Hide</button>
+
+<script>
+function toggleText() {
+  document.getElementById("para").classList.toggle("hide");
+}
+</script>
+
+</body>
+</html>

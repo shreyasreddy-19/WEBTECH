@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<ul id="list">
+  <li>Item 1</li>
+</ul>
+
+<button onclick="addItem()">Add</button>
+<button onclick="removeItem()">Remove</button>
+
+<script>
+function addItem() {
+  let li = document.createElement("li");
+  li.innerHTML = "New Item";
+  document.getElementById("list").append(li);
+}
+
+function removeItem() {
+  let list = document.getElementById("list");
+  list.removeChild(list.lastElementChild);
+}
+</script>
+
+</body>
+</html>
